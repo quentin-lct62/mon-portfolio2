@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .card {
+      height: 100%; /* Assurer que toutes les cartes ont la même hauteur */
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,32 +27,40 @@
   <main class="container">
     <section class="section">
       <h2>Projets Récents</h2>
-      <div class="card-deck">
+      <div class="row">
         <!-- Projet 1 -->
-        <div class="card bg-dark text-white">
-          <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="Projet 1">
-          <div class="card-body">
-            <h5 class="card-title">Projet 1</h5>
-            <p class="card-text">Description du projet 1...</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal1">Voir les détails</button>
+        <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex">
+          <div class="card bg-dark text-white flex-fill">
+            <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="Projet 1">
+            <div class="card-body">
+              <h5 class="card-title">Projet 1</h5>
+              <p class="card-text">Description du projet 1...</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal1">Voir les détails</button>
+            </div>
           </div>
         </div>
+
         <!-- Projet 2 -->
-        <div class="card bg-dark text-white">
-          <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="Projet 2">
-          <div class="card-body">
-            <h5 class="card-title">Projet 2</h5>
-            <p class="card-text">Description du projet 2...</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal2">Voir les détails</button>
+        <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex">
+          <div class="card bg-dark text-white flex-fill">
+            <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="Projet 2">
+            <div class="card-body">
+              <h5 class="card-title">Projet 2</h5>
+              <p class="card-text">Description du projet 2...</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal2">Voir les détails</button>
+            </div>
           </div>
         </div>
+
         <!-- Projet 3 -->
-        <div class="card bg-dark text-white">
-          <img src="https://picsum.photos/400/300?random=3" class="card-img-top" alt="Projet 3">
-          <div class="card-body">
-            <h5 class="card-title">Projet 3</h5>
-            <p class="card-text">Description du projet 3...</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal3">Voir les détails</button>
+        <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex">
+          <div class="card bg-dark text-white flex-fill">
+            <img src="https://picsum.photos/400/300?random=3" class="card-img-top" alt="Projet 3">
+            <div class="card-body">
+              <h5 class="card-title">Projet 3</h5>
+              <p class="card-text">Description du projet 3...</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal3">Voir les détails</button>
+            </div>
           </div>
         </div>
       </div>
