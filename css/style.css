@@ -1,0 +1,385 @@
+/* Style de base */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1f2a44, #2c3e50);
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* En-tête avec dégradé */
+header {
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e67e22;
+}
+
+/* Pied de page */
+footer {
+  background-color: #1abc9c;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+}
+
+/* Section Hero avec style de bouton */
+.hero {
+  background-color: #1f2a44;
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 5px solid #e67e22;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.hero .btn-custom {
+  background-color: #1abc9c;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
+}
+
+.hero .btn-custom:hover {
+  background-color: #148f77;
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Style des sections de contenu */
+.section {
+  padding: 40px;
+  margin: 20px;
+  background-color: #ffffff;
+  color: #1f2a44;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #e67e22;
+}
+
+.section h2 {
+  color: #1f2a44;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.section p {
+  color: #555555;
+}
+
+/* Bouton personnalisé */
+.btn-custom {
+  background-color: #e67e22;
+  color: #ffffff;
+  font-weight: bold;
+  border: 2px solid #d35400;
+  padding: 12px 24px;
+  margin-top: 20px;
+  transition: transform 0.2s, background-color 0.3s, border-color 0.3s;
+  border-radius: 5px;
+  display: block;
+  width: auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background-color: #d35400;
+  border-color: #b34100;
+  transform: scale(1.05);
+}
+
+/* Animation pour les titres */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Style des cartes de projet */
+.card {
+  width: 48%;
+  margin: 1%;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Bordure et effet focus pour le champ de formulaire */
+.form-control {
+  border: 1px solid #1abc9c;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #e67e22;
+  box-shadow: 0 0 8px rgba(230, 126, 34, 0.5);
+}
+
+/* Section Témoignages */
+.testimonials {
+  background-color: #1f2a44;
+  color: #e0e0e0;
+  padding: 60px 0;
+  border-top: 5px solid #e67e22;
+}
+
+.testimonials h2 {
+  color: #1abc9c;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.testimonial-text {
+  font-size: 1.3em;
+  font-style: italic;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item h5 {
+  color: #e67e22;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #1abc9c;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* Section Compétences */
+.skills {
+  background-color: #ffffff;
+  color: #1f2a44;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.skills h2 {
+  color: #1abc9c;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-item {
+  width: 150px;
+  padding: 20px;
+  background-color: #1abc9c;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+  background-color: #16a085;
+}
+
+.skill-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+/* Section Expériences */
+.experiences {
+  background-color: #ffffff;
+  color: #1f2a44;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.experiences h2 {
+  color: #1abc9c;
+  margin-bottom: 20px;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #1f2a44;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.experience-item h3 {
+  margin: 0;
+  color: #e67e22;
+}
+
+.experience-item p {
+  margin: 5px 0;
+}
+/* Animation d'apparition pour les cartes de projet */
+.card {
+  width: 48%;
+  margin: 1%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  animation: fadeInCard 0.6s ease forwards;
+}
+
+@keyframes fadeInCard {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Transition de couleur pour le header sticky */
+header.sticky {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #16a085, #1abc9c);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation de survol pour les liens du footer et les icônes de réseaux sociaux */
+footer .social-icons a {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #e67e22;
+  transform: scale(1.1);
+}
+
+/* Style des boutons de navigation dans les témoignages */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #1abc9c;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #16a085;
+  transform: scale(1.1);
+}
+.profile-img {
+  width: 200px; /* Ajustez la taille selon vos préférences */
+  height: 200px;
+  border-radius: 50%; /* Rendre l'image circulaire */
+  overflow: hidden; /* Masquer l'excès */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour effet de profondeur */
+  margin: 0 auto; /* Centrer l'image */
+  transition: transform 0.3s ease; /* Animation au survol */
+}
+.profile-img img {
+  width: 100%; /* S'assurer que l'image prend toute la largeur */
+  height: auto; /* Conserver le ratio */
+}
+
+/* Effet de zoom au survol */
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Style pour la section "À propos" */
+.about-section {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+
+.about-section h2 {
+  color: #1abc9c;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  color: #555555;
+  max-width: 600px; /* Limiter la largeur pour un meilleur confort de lecture */
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Style pour les icônes sociales */
+.footer .social-icons a {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #e67e22;
+  transform: scale(1.1);
+}

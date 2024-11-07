@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Projets</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Mes Projets</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="projects.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Projets Récents</h2>
+      <div class="card-deck">
+        <!-- Projet 1 -->
+        <div class="card bg-dark text-white">
+          <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="Projet 1">
+          <div class="card-body">
+            <h5 class="card-title">Projet 1</h5>
+            <p class="card-text">Description du projet 1...</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal1">Voir les détails</button>
+          </div>
+        </div>
+        <!-- Projet 2 -->
+        <div class="card bg-dark text-white">
+          <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="Projet 2">
+          <div class="card-body">
+            <h5 class="card-title">Projet 2</h5>
+            <p class="card-text">Description du projet 2...</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal2">Voir les détails</button>
+          </div>
+        </div>
+        <!-- Projet 3 -->
+        <div class="card bg-dark text-white">
+          <img src="https://picsum.photos/400/300?random=3" class="card-img-top" alt="Projet 3">
+          <div class="card-body">
+            <h5 class="card-title">Projet 3</h5>
+            <p class="card-text">Description du projet 3...</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal3">Voir les détails</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 - Mon Portfolio</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- Modales pour les projets -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel1">Détails du Projet 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Nom du Projet 1</h5>
+          <p>Voici une description détaillée de Projet 1 avec ses fonctionnalités, technologies utilisées, etc.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel2">Détails du Projet 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Nom du Projet 2</h5>
+          <p>Voici une description détaillée de Projet 2 avec ses fonctionnalités, technologies utilisées, etc.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel3">Détails du Projet 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Nom du Projet 3</h5>
+          <p>Voici une description détaillée de Projet 3 avec ses fonctionnalités, technologies utilisées, etc.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
